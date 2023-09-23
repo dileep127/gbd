@@ -1,0 +1,58 @@
+/* Reset some default styles */
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #ffecf0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+}
+
+/* Container for the big heart */
+.big-heart-container {
+    position: relative;
+}
+
+/* Style for the big heart */
+.big-heart {
+    font-size: 10px; /* Start with a small heart */
+    transform: scale(0.1); /* Start with a small size */
+    color: #ff0055;
+    border: 0;
+    animation: growHeart 5s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards;
+}
+
+/* Keyframe animation to make the heart grow */
+@keyframes growHeart {
+    0% {
+        font-size: 10px;
+        transform: scale(0.1);
+    }
+    100% {
+        font-size: 400px; /* End with a big heart */
+        transform: scale(1); /* End with the full size */
+    }
+}
+
+/* Navigation button styles and animation */
+.nav-button {
+    background-color: #3498db;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 20px;
+    cursor: pointer;
+    transform: scale(1); /* Initial scale */
+    transition: transform 0.5s ease-in-out;
+}
+
+/* Button hover effect - popping animation */
+.nav-button:hover {
+    transform: scale(1.1); /* Scale up on hover */
+}

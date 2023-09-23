@@ -9,36 +9,12 @@
 <body>
     <div class="container">
         <header>
-            <h1>Happy Birthday, [Girlfriend's Name]!</h1>
+            <h1>Wish you many many many Happy Birthday, GAAAAAYU💕!</h1>
         </header>
         <main>
             <div class="birthday-card">
-                <img src="birthday-imag.jpg" alt="Birthday Balloons">
-                <p>Dear [Girlfriend's Name],</p>
-                <p>On this special day, I want to wish you all the happiness and love in the world. You mean everything to me, and I'm grateful to have you in my life.</p>
-                <p>May your day be filled with joy, laughter, and unforgettable moments. Here's to celebrating you!</p>
-                <p>With all my love,</p>
-                p>May your day be filled with joy, laughter, and unforgettable moments. Here's to celebrating you!</p>
-                <p>With all my love,</p>
-                p>May your day be filled with joy, laughter, and unforgettable moments. Here's to celebrating you!</p>
-                <p>With all my love,</p>
-                p>May your day be filled with joy, laughter, and unforgettable moments. Here's to celebrating you!</p>
-                <p>With all my love,</p>
-                p>May your day be filled with joy, laughter, and unforgettable moments. Here's to celebrating you!</p>
-                <p>With all my love,</p>
-                p>May your day be filled with joy, laughter, and unforgettable moments. Here's to celebrating you!</p>
-                <p>With all my love,</p>
-                p>May your day be filled with joy, laughter, and unforgettable moments. Here's to celebrating you!</p>
-                <p>With all my love,</p>
-                p>May your day be filled with joy, laughter, and unforgettable moments. Here's to celebrating you!</p>
-                <p>With all my love,</p>
-                p>May your day be filled with joy, laughter, and unforgettable moments. Here's to celebrating you!</p>
-                <p>With all my love,</p>
-                p>May your day be filled with joy, laughter, and unforgettable moments. Here's to celebrating you!</p>
-                <p>With all my love,</p>
-                p>May your day be filled with joy, laughter, and unforgettable moments. Here's to celebrating you!</p>
-                <p>With all my love,</p>
-                p>May your day be filled with joy, laughter, and unforgettable moments. Here's to celebrating you!</p>
+                <!--<img src="birthday-imag.jpg" alt="Birthday Balloons"> -->
+                <p>My Dear Macchi💕,</p>
                 <p>With all my love,</p>
                 <p>[Your Name]</p>
 
@@ -51,35 +27,50 @@
             </div>
             <div class="prompts">
                 <p>For special wishes, click on the prompts:</p>
-                <a href="birthday_wishes.html">Birthday Wishes</a>
-                <!-- Add more prompts as needed -->
+                <!-- Navigation button with animation -->
+                <a class="nav-button" href="birthday_wishes.html">Gayu Ill Vattu</a>
             </div>
         </main>
-        <footer>
-            <p>&copy; 2023 YourName.com</p>
-        </footer>
+        
     </div>
 
     <script>
         // JavaScript for creating and animating hearts
-        function createHeart() {
-            const heart = document.createElement('span');
-            heart.className = 'heart';
-            heart.innerHTML = '❤️';
-            document.body.appendChild(heart);
+        // JavaScript for creating and animating hearts
+function createHeart() {
+    const heart = document.createElement('span');
+    heart.className = 'heart';
+    heart.innerHTML = '❤️';
+    document.body.appendChild(heart);
 
-            const x = Math.random() * window.innerWidth;
-            const y = Math.random() * window.innerHeight;
+    const x = Math.random() * (window.innerWidth - 50); // Adjusted to keep the heart within the visible area
+    const y = Math.random() * (window.innerHeight - 50); // Adjusted to keep the heart within the visible area
 
-            heart.style.left = `${x}px`;
-            heart.style.top = `${y}px`;
+    heart.style.left = `${x}px`;
+    heart.style.top = `${y}px`;
 
-            setTimeout(() => {
-                heart.remove();
-            }, 25000); // Remove the heart element after 6 seconds
+    const removeHeart = () => {
+        heart.remove();
+    };
+
+    setTimeout(removeHeart, 25000); // Remove the heart element after 25 seconds
+
+    const animateHeart = () => {
+        const currentX = parseFloat(heart.style.left);
+        const currentY = parseFloat(heart.style.top);
+
+        if (currentX > window.innerWidth || currentY > window.innerHeight) {
+            removeHeart();
+        } else {
+            requestAnimationFrame(animateHeart);
         }
+    };
 
-        setInterval(createHeart, 3000); // Create a new heart every 3 seconds
+    requestAnimationFrame(animateHeart);
+}
+
+setInterval(createHeart, 3000); // Create a new heart every 3 seconds
+
     </script>
 </body>
 </html>

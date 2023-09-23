@@ -131,6 +131,7 @@ body::after {
     50% {
         opacity: 1;
         transform: translate(100px, 100px);
+        
     }
     100% {
         opacity: 0;
@@ -179,11 +180,22 @@ body {
     display: inline-block;
     margin-top: 20px;
     cursor: pointer;
-    transform: scale(1); /* Initial scale */
-    transition: transform 0.5s ease-in-out;
+    animation: blink 1s infinite; /* Add a blinking animation */
 }
 
-/* Button hover effect - popping animation */
+/* Define the blinking animation */
+@keyframes blink {
+    0% {
+        background-color: #3498db;
+    }
+    50% {
+        background-color: #014673;
+        transform: scale(1.1);
+    }
+    100% {
+        background-color: #3498db;
+    }
+}
 .nav-button:hover {
     transform: scale(1.1); /* Scale up on hover */
 }
