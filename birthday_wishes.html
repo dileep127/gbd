@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Birthday Wishes</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Birthday Wishes for [Girlfriend's Name]!</h1>
+    </header>
+    <main>
+        <div class="birthday-card">
+            <p>Dear [Girlfriend's Name],</p>
+            <p>On this special day, we wish you all the happiness and love in the world. You mean everything to us, and we're grateful to have you in our lives.</p>
+            <p>May your day be filled with joy, laughter, and unforgettable moments. Here's to celebrating you!</p>
+            <p>With all our love,</p>
+            <p>[Your Name]</p>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2023 YourName.com</p>
+    </footer>
+
+    <script>
+        // JavaScript for creating and animating hearts
+        function createHeart() {
+            const heart = document.createElement('span');
+            heart.className = 'heart';
+            heart.innerHTML = '❤️';
+            document.body.appendChild(heart);
+
+            const x = Math.random() * window.innerWidth;
+            const y = Math.random() * window.innerHeight;
+
+            heart.style.left = `${x}px`;
+            heart.style.top = `${y}px`;
+
+            setTimeout(() => {
+                heart.remove();
+            }, 25000); // Remove the heart element after 6 seconds
+        }
+
+        setInterval(createHeart, 3000); // Create a new heart every 3 seconds
+    </script>
+</body>
+</html>

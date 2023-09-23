@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday, [Girlfriend's Name]!</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Happy Birthday, [Girlfriend's Name]!</h1>
+        </header>
+        <main>
+            <div class="birthday-card">
+                <img src="birthday-imag.jpg" alt="Birthday Balloons">
+                <p>Dear [Girlfriend's Name],</p>
+                <p>On this special day, I want to wish you all the happiness and love in the world. You mean everything to me, and I'm grateful to have you in my life.</p>
+                <p>May your day be filled with joy, laughter, and unforgettable moments. Here's to celebrating you!</p>
+                <p>With all my love,</p>
+                p>May your day be filled with joy, laughter, and unforgettable moments. Here's to celebrating you!</p>
+                <p>With all my love,</p>
+                p>May your day be filled with joy, laughter, and unforgettable moments. Here's to celebrating you!</p>
+                <p>With all my love,</p>
+                p>May your day be filled with joy, laughter, and unforgettable moments. Here's to celebrating you!</p>
+                <p>With all my love,</p>
+                p>May your day be filled with joy, laughter, and unforgettable moments. Here's to celebrating you!</p>
+                <p>With all my love,</p>
+                p>May your day be filled with joy, laughter, and unforgettable moments. Here's to celebrating you!</p>
+                <p>With all my love,</p>
+                p>May your day be filled with joy, laughter, and unforgettable moments. Here's to celebrating you!</p>
+                <p>With all my love,</p>
+                p>May your day be filled with joy, laughter, and unforgettable moments. Here's to celebrating you!</p>
+                <p>With all my love,</p>
+                p>May your day be filled with joy, laughter, and unforgettable moments. Here's to celebrating you!</p>
+                <p>With all my love,</p>
+                p>May your day be filled with joy, laughter, and unforgettable moments. Here's to celebrating you!</p>
+                <p>With all my love,</p>
+                p>May your day be filled with joy, laughter, and unforgettable moments. Here's to celebrating you!</p>
+                <p>With all my love,</p>
+                p>May your day be filled with joy, laughter, and unforgettable moments. Here's to celebrating you!</p>
+                <p>With all my love,</p>
+                <p>[Your Name]</p>
+
+                <!-- Emojis with animations -->
+                <span class="balloon">🎈</span>
+                <span class="cake">🎂</span>
+                <span class="party">🥳</span>
+                <span class="gift">🎁</span>
+                <span class="heart">❤️</span>
+            </div>
+            <div class="prompts">
+                <p>For special wishes, click on the prompts:</p>
+                <a href="birthday_wishes.html">Birthday Wishes</a>
+                <!-- Add more prompts as needed -->
+            </div>
+        </main>
+        <footer>
+            <p>&copy; 2023 YourName.com</p>
+        </footer>
+    </div>
+
+    <script>
+        // JavaScript for creating and animating hearts
+        function createHeart() {
+            const heart = document.createElement('span');
+            heart.className = 'heart';
+            heart.innerHTML = '❤️';
+            document.body.appendChild(heart);
+
+            const x = Math.random() * window.innerWidth;
+            const y = Math.random() * window.innerHeight;
+
+            heart.style.left = `${x}px`;
+            heart.style.top = `${y}px`;
+
+            setTimeout(() => {
+                heart.remove();
+            }, 25000); // Remove the heart element after 6 seconds
+        }
+
+        setInterval(createHeart, 3000); // Create a new heart every 3 seconds
+    </script>
+</body>
+</html>
