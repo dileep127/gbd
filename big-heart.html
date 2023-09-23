@@ -11,7 +11,30 @@
         <!-- The heart icon is represented using the HTML entity ❤️ -->
         <div class="big-heart">❤️</div>
     </div>
-     <!-- Navigation button with animation -->
-     <a class="nav-button" href="index.html">Back to Home</a>
+    <!-- Hidden message div initially -->
+    <div class="message" style="display: none;">
+        <h2>Enta hudkta idye? Al ಮೇಲ್ ಇದ್ದಲೆ adeya ಗಿಫ್ಟ್😝😂</h2>
+        <a class="nav-button" href="index.html">Go to Home</a>
+        <!-- Button to trigger the message display -->
+    
+    </div>
+    <div class="fixbutton">
+    <button class="show-message-button">Show Message</button>
+</div>
+    <!-- JavaScript code to show buttons after the heart animation ends -->
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const showMessageButton = document.querySelector(".show-message-button");
+            const bigHeartContainer = document.querySelector(".big-heart-container");
+            const message = document.querySelector(".message");
+
+            showMessageButton.addEventListener("click", function() {
+                // Hide the heart and show the message
+                //bigHeartContainer.style.display = "none";
+                showMessageButton.style.display="none";
+                message.style.display = "block";
+            });
+        });
+    </script>
 </body>
 </html>

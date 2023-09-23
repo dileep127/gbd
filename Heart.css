@@ -31,7 +31,7 @@ body {
         transform: scale(0.1);
     }
     100% {
-        font-size: 400px; /* End with a big heart */
+        font-size: 300px; /* End with a big heart */
         transform: scale(1); /* End with the full size */
     }
 }
@@ -55,4 +55,44 @@ body {
 /* Button hover effect - popping animation */
 .nav-button:hover {
     transform: scale(1.1); /* Scale up on hover */
+}
+
+/* Your existing CSS styles for heart animation */
+
+/* Style for the message div */
+.message {
+    text-align: center;
+    margin-top: 20px;
+    position: absolute;
+    bottom: 20px; /* Adjust the position as needed */
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/* Button to show the message */
+.show-message-button {
+    background-color: #3498db;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    text-decoration: none;
+    margin-top: 20px;
+    cursor: pointer;
+    
+}
+
+/* Button hover effect - popping animation */
+.show-message-button:hover {
+    transform: scale(1.1); /* Scale up on hover */
+}
+
+.fixbutton{
+    text-align: center;
+    margin-top: 20px;
+    position: absolute;
+    bottom: 20px; /* Adjust the position as needed */
+    left: 50%;
+    transform: translateX(-50%);
 }
