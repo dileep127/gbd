@@ -200,3 +200,10 @@ body {
 .nav-button:hover {
     transform: scale(1.1); /* Scale up on hover */
 }
+
+.birthday-card video {
+    max-width: 100%;
+    height: auto; /* This will maintain the video's aspect ratio */
+    display: block; /* Remove any default spacing around the video */
+    margin: 0 auto; /* Center the video horizontally */
+}
